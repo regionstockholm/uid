@@ -6,13 +6,13 @@ Within Region Stockholm Gotland, different types of identifiers are used in exis
 ## Existing URIs
 The following URIs are used within Region Stockholm Gotland:
 
-|URI|Name|Title|Status|Kind|Date|Usage|
-|---|---|---|---|---|---|---|
-|https://uid.regionstockholm.se/takecare/unitId|takeCareUnitId|TakeCare enhets-id|draft|identifier|2023-06-16|The URI identifies unit identifiers used within the EHR system TakeCare.|
-|https://uid.regionstockholm.se/kombika|kombikaCode|Kombikakod|draft|identifier|2023-06-16|The URI identifies kombika-codes.|
-|https://uid.regionstockholm.se/openehr/ehrid|||draft|identifier|2023-06-16|The URI identifies ....|
+|UniqueId.type|UniqueId.value|Name|Title|Status|Kind|Date|Description|
+|---|---|---|---|---|---|---|---|
+|uri|https://uid.regionstockholm.se/takecare/unitId|takeCareUnitId|TakeCare enhets-id|draft|identifier|2023-06-16|The URI identifies unit identifiers used within the EHR system TakeCare.|
+|uri|https://uid.regionstockholm.se/kombika|kombikaCode|Kombikakod|draft|identifier|2023-06-16|The URI identifies kombika-codes.|
+|uri|https://uid.regionstockholm.se/openehr/ehrid|||draft|identifier|2023-06-16|The URI identifies ....|
 
-The table kolumn headings are based on attributes in the FHIR NamingSystem-resource: https://hl7.org/fhir/namingsystem.html
+The table column headings are based on attributes in the FHIR NamingSystem-resource: https://hl7.org/fhir/namingsystem.html
 
 
 ## Governance
