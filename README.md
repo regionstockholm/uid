@@ -1,19 +1,21 @@
-# URI-baserade identifierare för Region Stockholm Gotland
+# URI-based identifiers for Region Stockholm Gotland
 
-## Inledning
-Inom Region Stockholm Gotland används olika typer av identifierare i befintliga IT-system, t.ex. kombikakoder eller enhets-id:n inom journalsystemet TakeCare. När system ska kommunicera med varandra bör det tydliggöras för systemen vilken typ av identifierare som överförs, man behöver alltså ett sätt att identifierera identifierare. Detta kan göras med så kallade URI:er (universal resource identifiers).
+## Introduction
+Within Region Stockholm Gotland, different types of identifiers are used in existing IT systems, such as kombika-codes or unit identifiers within the electronic healthrecord (EHR) system TakeCare. When systems are to communicate with each other, it should be made clear to the systems what type of identifier is being transferred, so a way of identifying identifiers is needed. This can be done with so-called URIs (universal resource identifiers).
 
-## Befintliga URI:er
-Nedanstående URI:er används inom Region Stockholm Gotland:
+## Existing URIs
+The following URIs are used within Region Stockholm Gotland:
 
-|URI|Titel|Beskrivning|
-|---|---|---|
-|https://uid.regionstockholm.se/takecare/unitId|TakeCare enhets-id|URI:n identifierar enhets-id:n som används inom journalsystemet TakeCare.|
-|https://uid.regionstockholm.se/kombika|Kombikakod|URI:n identifierar kombikakoder.|
-|https://uid.regionstockholm.se/openehr/ehrid|||
+|URI|Name|Title|Status|Kind|Date|Usage|
+|---|---|---|---|---|---|---|
+|https://uid.regionstockholm.se/takecare/unitId|takeCareUnitId|TakeCare enhets-id|draft|identifier|2023-06-16|The URI identifies unit identifiers used within the EHR system TakeCare.|
+|https://uid.regionstockholm.se/kombika|kombikaCode|Kombikakod|draft|identifier|2023-06-16|The URI identifies kombika-codes.|
+|https://uid.regionstockholm.se/openehr/ehrid|||draft|identifier|2023-06-16|The URI identifies ....|
+
+The table kolumn headings are based on attributes in the FHIR NamingSystem-resource: https://hl7.org/fhir/namingsystem.html
 
 
-## Förvaltare
-URI:erna förvaltas av ...
+## Governance
+The URIs are managed by ...
 
-Om du har frågor kring identifierarna, vänligen kontakta: ...
+If you have questions about the identifiers, please contact: ...
