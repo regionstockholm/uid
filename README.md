@@ -3,6 +3,10 @@
 ## Introduction
 Within Region Stockholm Gotland, different types of identifiers are used in existing IT systems, such as kombika-codes or unit identifiers within the electronic healthrecord (EHR) system TakeCare. When systems are to communicate with each other, it should be made clear to the systems what type of identifier is being transferred, so a way of identifying identifiers is needed. This can be done with so-called URIs (universal resource identifiers).
 
+An identifier system is a managed collection of identifiers. Identifiers are used to identify a concepts, people etc. Identifiers belonging to a specific Identifier system can follow a certain format. Exampels of identifier systems within Sweden are Personnummer, Samordningsnummer eller Reservnummer.
+
+See https://build.fhir.org/identifier-registry.html for international examples of Identifier systems
+
 ## Existing URIs
 The following URIs are used within Region Stockholm Gotland:
 
