@@ -79,6 +79,15 @@ a:hover {
     width: 80vw;
   }
 
+/*   Tabell: Container som gör tabellen scrollbar i mobilläge */
+  .mobilescroll {
+    margin: 4px, 4px;
+        padding: 4px;
+        max-width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+  }
+
   /* Tabell: */
   table {
     border-collapse: collapse;
@@ -94,7 +103,6 @@ a:hover {
     text-align: left;
     border-right: 1px solid #002d5a;
     border-left: 1px solid #002d5a;
-    min-width:110px;
   }
     /* Tabell: dataceller i tabellen  */
   td {
