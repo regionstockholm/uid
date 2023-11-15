@@ -6,6 +6,7 @@ body {
   color: #333333;
 } 
 
+/* Header: Container för hela headern */
 .headerBorder {
   border-top: 5px solid #00aeef;
   border-bottom: 15px solid #002d5a;
@@ -18,25 +19,30 @@ body {
   position: relative;
 }
 
+/* Header: Anger hur stor vidd av headern innehållet inuti den får ta upp */
+.headerContent {
+  width: 80vw;
+}
+
+
+/* Logga: Container för logga */
 .imgWrapper {
   position: absolute;
 bottom: 50%;
 }
 
-.headerContent {
-  width: 80vw;
-}
-
+/* HTML-tagg för innehåll (ex header & footer) */
 main {
   min-height: 100vh;
 }
 
+/* Navigering: */
 nav {
   position: absolute;
   bottom: 0;
   text-align: start;
 }
-
+/* Navigering: (ul & li är listan som navigeringen består av) */
 ul {
   list-style: none;
   gap: 1rem;
@@ -44,12 +50,22 @@ ul {
   position: relative;
   bottom:-10px
 }
-
 li {
   font-weight: bold;
   bottom: -2px;
 }
+/* Navigering: a är länktaggarna */
+a {
+  text-decoration: none;
+  color: #333333;
+  letter-spacing: 0.5px;
+}
+a:hover {
+  border-bottom: 22px solid rgba(150, 148, 148, 0.308);
 
+}
+
+/* Innehåll: Detta är allt mellan header och footer, bla sections */
 .mainWrapper {
   padding-top: 2rem;;
   display: flex;
@@ -58,11 +74,20 @@ li {
 
   }
 
+  /* Innehåll: Innehållet i mainWrapper */
   .section {
     width: 80vw;
   }
 
+  /* Tabell: */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+    /* Tabell: Headern på tabellen*/
   th {
+    padding: 1rem;
     background-color:#002d5a;
     color: white;
     border-bottom: 3px solid #00aeef ;
@@ -71,7 +96,7 @@ li {
     border-left: 1px solid #002d5a;
     min-width:110px;
   }
-
+    /* Tabell: dataceller i tabellen  */
   td {
     border: 1px solid #333333;
     padding: 10px;
@@ -79,27 +104,6 @@ li {
     vertical-align: top;
   }
 
-  a {
-    text-decoration: none;
-    color: #333333;
-    letter-spacing: 0.5px;
-  }
-
-  a:hover {
-    border-bottom: 22px solid rgba(150, 148, 148, 0.308);
-
-  }
-
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  .tableHead {
-    padding: 1.3rem;
-
-  }
 
   .footer {
     margin-top: 30px;
