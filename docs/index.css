@@ -80,14 +80,17 @@ a:hover {
   }
 
 /*   Tabell: Container som gör tabellen scrollbar i mobilläge */
-  .mobilescroll {
-    margin: 4px, 4px;
-        padding: 4px;
-        max-width: 100%;
-        overflow: auto;
-        white-space: nowrap;
+  .mobilescroll th {   
+    width: 100%;
+    white-space: nowrap;  
   }
-
+  @media screen and (max-device-width: 844px) {
+    .mobilescroll {
+      overflow: auto;
+      max-width: 100%;
+    
+    }
+  }
   /* Tabell: */
   table {
     border-collapse: collapse;
