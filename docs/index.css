@@ -82,7 +82,7 @@ a:hover {
 /*   Tabell: Container som gör tabellen scrollbar i mobilläge */
   .mobilescroll th {   
     width: 100%;
-    white-space: nowrap;  
+  
   }
   @media screen and (max-device-width: 844px) {
     .mobilescroll {
@@ -94,7 +94,7 @@ a:hover {
   /* Tabell: */
   table {
     border-collapse: collapse;
-    width: 100%;
+/*     //width: 100%; */
   }
 
     /* Tabell: Headern på tabellen*/
@@ -107,13 +107,46 @@ a:hover {
     border-right: 1px solid #002d5a;
     border-left: 1px solid #002d5a;
   }
+
     /* Tabell: dataceller i tabellen  */
   td {
     border: 1px solid #333333;
     padding: 10px;
     text-align: left;
     vertical-align: top;
+
   }
+
+/* Ändra storleken här för tabellkolumnerna */  
+ .table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 20%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 10%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 10%;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 10%;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 15%;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 15%;
+}
 
 
   .footer {
