@@ -4,15 +4,14 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   color: #333333;
-} 
+  background-color: rgba(231, 243, 249, 226);
+}
 
 /* Header: Container för hela headern */
 .headerBorder {
-  border-top: 5px solid #00aeef;
-  border-bottom: 15px solid #002d5a;
-  background-color: white;
+  background-color: #002d5a;
   width: 100%;
-  height: 175px;
+  height: 125px;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -27,8 +26,17 @@ body {
 
 /* Logga: Container för logga */
 .imgWrapper {
+  height: 100px; /* Set the desired height */
+  width: auto;
   position: absolute;
-bottom: 50%;
+  bottom: 10%;
+
+}
+
+/* Bildens storlek sätts till 100% för att max ta upp 100 % av containern här ovan (.imgWrapper)*/
+.image {
+  height: 100%;
+  width:100%;
 }
 
 /* HTML-tagg för innehåll (ex header & footer) */
@@ -71,7 +79,33 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items:center;
+  gap: 1rem;
 
+  }
+
+/*   Stora titeln på sidan  */
+ .heading {
+    width: 80vw;
+    font-size: 2rem; /* Storlek på titeln, kan anges i px om ni vill det också */
+    color: #002d5a;
+    font-weight: 900;
+    line-height: 1.11;
+  }
+
+/*   Mindre headings, inledning, befintliga URI:er etc */
+  .heading-smaller {
+    font-size:1.5rem;
+    font-weight: bolder;
+  }
+
+/*   Den vita ramen kring texten  */
+  .white-frame {
+    width: 80vw;
+    background-color: #ffffff;
+    padding: 10px 25px 25px 25px;
+    border-bottom-right-radius: 25px;
+    display: inline-block;
+    color: #002d5a;
   }
 
   /* Innehåll: Innehållet i mainWrapper */
@@ -80,15 +114,15 @@ a:hover {
   }
 
 /*   Tabell: Container som gör tabellen scrollbar i mobilläge */
-  .mobilescroll th {   
+  .mobilescroll th {
     width: 100%;
-  
+
   }
   @media screen and (max-device-width: 844px) {
     .mobilescroll {
       overflow: auto;
       max-width: 100%;
-    
+
     }
   }
   /* Tabell: */
@@ -101,8 +135,10 @@ a:hover {
   th {
     padding: 1rem;
     background-color:#002d5a;
+    font-size: 1rem;
     color: white;
-    border-bottom: 3px solid #00aeef ;
+    font-weight: 600;
+    line-height: 1.11;
     text-align: left;
     border-right: 1px solid #002d5a;
     border-left: 1px solid #002d5a;
@@ -117,7 +153,7 @@ a:hover {
 
   }
 
-/* Ändra storleken här för tabellkolumnerna */  
+/* Ändra storleken här för tabellkolumnerna */
  .table th:nth-child(1),
 .table td:nth-child(1) {
   width: 20%;
@@ -148,11 +184,9 @@ a:hover {
   width: 15%;
 }
 
-
   .footer {
     margin-top: 30px;
     bottom: 0;
-    border-top: 5px solid #00aeef;
     background-color: #002d5a;
     width: 100%;
     height: 175px;
@@ -161,7 +195,7 @@ a:hover {
     align-items:center;
     justify-content: flex-start;
   }
-  
+
   .footerContent {
     padding-top: 2rem;
     display: flex;
