@@ -101,6 +101,7 @@ a:hover {
 /*   Den vita ramen kring texten  */
   .white-frame {
     width: 80vw;
+    height: auto;
     background-color: #ffffff;
     padding: 10px 25px 25px 25px;
     border-bottom-right-radius: 25px;
