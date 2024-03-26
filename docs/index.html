@@ -1,104 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Informationssida om URI:er för specifika identifierare som används i Region Stockholm</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
   <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="index.css" />
 
 </head>
+
 <body>
   <header>
-    <div class="headerBorder">
-      <div class="headerContent">
-        <div class="imgWrapper">
-           <img class="image" src="assets/Region_Stockholm_vit_frizon.svg" alt="Logo">
-<!--           <img src="https://www.regionstockholm.se/ui/img/sll-logo-small.svg" alt="Logo"> -->
+    <header>
+      <div class="headerBorder">
+        <div class="headerContent">
+          <div class="imgWrapper">
+            <img class="image" src="assets/Region_Stockholm_vit_frizon.svg" alt="Logo">
+            <!--           <img src="/docs/assets/sll-logo.svg" alt="logo"> -->
+            <!--           <img src="https://www.regionstockholm.se/ui/img/sll-logo-small.svg" alt="logo"> -->
+          </div>
+          <nav>
+            <ul>
+              <li><a class="navLink current" href="index.html"></a></li>
+              <li><a class="navLink" href="#"></a></li>
+              <li><a class="navLink" href="#"></a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </nav>
-  </header>
+      </div>
+    </header>
+    <main class="mainWrapper">
+      <div class="white-frame">
+        <section class="heading">
+          <p>Informationssida om URI:er för specifika identifierare som används i Region Stockholm</h1>
+        </section>
+        <section class="section">
+          <p class="heading-smaller">Inledning
+          <p>
+            Inom Region Stockholm används olika typer av identifierare i befintliga IT-system. Det kan vara olika typer
+            av
+            organisationsidentifierare (t.ex. kombikoder eller enhetsidentifierare i journalsystemet TakeCare) eller
+            personidentifierare (t.ex. personnummer eller reservnummer). När system kommunicerar med varandra bör det
+            vara
+            tydligt för systemen vilken typ av identifierare som överförs, därför behövs ett sätt att "identifiera
+            identifierare". Detta kan göras med hjälp av universella resursidentifierare (URI).<br><br>
+            För att identifiera identifierare som används lokalt inom regionen har ett antal URI:er skapats, se listan
+            nedan.<br><br>
+        </section>
+        <section class="section">
+          <p class="heading-smaller">Befintliga URI:er</p>
+          Följande identifierare används lokalt inom Region Stockholm. Därför har de angivna URI:erna skapats.<br><br>
+          <div class="mobilescroll">
+            <table class="table">
+              <tr>
+                <th class="tableHead">URI</th>
+                <th>Namn på identifierare</th>
+                <th>URI-status</th>
+                <th>Typ</th>
+                <th>Datum</th>
+                <th>Beskrivning</th>
+              </tr>
+              <tr>
+                <td>https://uid.regionstockholm.se/takecare/unitId</td>
+                <td>TakeCare enhets-id</td>
+                <td>Aktiv</td>
+                <td>Identifierare</td>
+                <td>2023-11-01</td>
+                <td>URI:n identifierar enhetsidentifierare som används inom journalsystemet TakeCare.</td>
+              </tr>
+              <tr>
+                <td>https://uid.regionstockholm.se/kombika</td>
+                <td>Kombikakod</td>
+                <td>Aktiv</td>
+                <td>Identifierare</td>
+                <td>2023-11-01</td>
+                <td>URI:n identifierar kombikakoder.</td>
+              </tr>
+              <tr>
+                <td>https://uid.regionstockholm.se/sllreservnummer</td>
+                <td>SLL reservnummer</td>
+                <td>Aktiv</td>
+                <td>Identifierare</td>
+                <td>2023-11-01</td>
+                <td>URI:n identifierar SLL:s reservnummer.</td>
+              </tr>
+              <tr>
+                <td>https://uid.regionstockholm.se/openehr</td>
+                <td>...</td>
+                <td>Utkast</td>
+                <td>Identifierare</td>
+                <td>2023-11-01</td>
+                <td>URI:n identifierar ... .</td>
+              </tr>
+            </table>
+          </div>
 
-  <main class="mainWrapper">
-<div class="white-frame">
-  <section class="heading">    <p>Informationssida om URI:er för specifika identifierare som används i Region Stockholm</h1>
-  </section>
-   <section class="section">
-      <p class="heading-smaller">Inledning<p>
-      Inom Region Stockholm används olika typer av identifierare i befintliga IT-system. Det kan vara olika typer av organisationsidentifierare (t.ex. kombikoder eller enhetsidentifierare i journalsystemet TakeCare) eller personidentifierare (t.ex. personnummer eller reservnummer). När system kommunicerar med varandra bör det vara tydligt för systemen vilken typ av identifierare som överförs, därför behövs ett sätt att "identifiera identifierare". Detta kan göras med hjälp av universella resursidentifierare (URI).<br><br>
-      För att identifiera identifierare som används lokalt inom regionen har ett antal URI:er skapats, se listan nedan.<br><br>
-    </section>
-    <section class="section">
-      <p class="heading-smaller">Befintliga URI:er</p>
-      Följande identifierare används lokalt inom Region Stockholm. Därför har de angivna URI:erna skapats.<br><br>
-      <div class="mobilescroll">
-        <table class="table">
-        <tr>
-          <th class="tableHead">URI</th>
-          <th>Namn på identifierare</th>
-          <th >URI-status</th>
-          <th >Typ</th>
-          <th>Datum</th>
-          <th>Beskrivning</th>
-        </tr>
-        <tr>
-          <td>https://uid.regionstockholm.se/takecare/unitId</td>
-          <td>TakeCare enhets-id</td>
-          <td>Aktiv</td>
-          <td>Identifierare</td>
-          <td>2023-11-01</td>
-          <td>URI:n identifierar enhetsidentifierare som används inom journalsystemet TakeCare.</td>
-        </tr>
-        <tr>
-          <td>https://uid.regionstockholm.se/kombika</td>
-          <td>Kombikakod</td>
-          <td>Aktiv</td>
-          <td>Identifierare</td>
-          <td>2023-11-01</td>
-          <td>URI:n identifierar kombikakoder.</td>
-        </tr>
-        <tr>
-          <td>https://uid.regionstockholm.se/sllreservnummer</td>
-          <td>SLL reservnummer</td>
-          <td>Aktiv</td>
-          <td>Identifierare</td>
-          <td>2023-11-01</td>
-          <td>URI:n identifierar SLL:s reservnummer.</td>
-        </tr>
-        <tr>
-          <td>https://uid.regionstockholm.se/openehr</td>
-          <td>...</td>
-          <td>Utkast</td>
-          <td>Identifierare</td>
-          <td>2023-11-01</td>
-          <td>URI:n identifierar ... .</td>
-        </tr>
-      </table>
+        </section>
+        <section class="section">
+          <p class="heading-smaller">Förvaltning
+          <p>
+            URI:erna förvaltas av ...<br><br>
+            Om du har frågor om URI:erna, vänligen ta kontakt med:.... <br><br>
+        </section>
       </div>
 
-    </section>
-    <section class="section">
-      <p class="heading-smaller">Förvaltning<p>
-       URI:erna förvaltas av ...<br><br>
-       Om du har frågor om URI:erna, vänligen ta kontakt med:.... <br><br>
-    </section>
-</div>
-
-  </main>
-  <footer>
-<div class="footer">
-          <div class="footerContent">
-           <section></section>
-           <section></section>
-           <section></section>
-          </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footerContent">
+          <section></section>
+          <section></section>
+          <section></section>
         </div>
-      </footer>
+      </div>
+    </footer>
 </body>
+
 </html>

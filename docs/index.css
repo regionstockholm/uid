@@ -20,14 +20,14 @@ body {
 
 /* Header: Anger hur stor vidd av headern innehållet inuti den får ta upp */
 .headerContent {
-  width: 80vw;
+  width: 83%;
 }
 
 
 /* Logga: Container för logga */
 .imgWrapper {
   height: 100px; /* Set the desired height */
-  width: auto;
+  width:275px;
   position: absolute;
   bottom: 10%;
 
