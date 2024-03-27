@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  color: #333333;
   background-color: rgba(231, 243, 249, 226);
 }
 
@@ -75,7 +74,7 @@ a:hover {
 
 /* Innehåll: Detta är allt mellan header och footer, bla sections */
 .mainWrapper {
-  padding-top: 2rem;;
+  padding-top: 3rem;;
   display: flex;
   flex-direction: column;
   align-items:center;
