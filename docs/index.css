@@ -156,7 +156,7 @@ a:hover {
 /* Ändra storleken här för tabellkolumnerna */
  .table th:nth-child(1),
 .table td:nth-child(1) {
-  width: 20%;
+  width: 15%;
 }
 
 .table th:nth-child(2),
@@ -171,17 +171,17 @@ a:hover {
 
 .table th:nth-child(4),
 .table td:nth-child(4) {
-  width: 10%;
+  width: 25%;
 }
 
 .table th:nth-child(5),
 .table td:nth-child(5) {
-  width: 15%;
+  width: 10%;
 }
 
 .table th:nth-child(6),
 .table td:nth-child(6) {
-  width: 15%;
+  width: 10%;
 }
 
   .footer {
